@@ -49,6 +49,7 @@ public class PostagemController {
 		
 	}
 		 
+	
 	@GetMapping("/{id}")	
 	public ResponseEntity <Postagem> getById(@PathVariable Long id){
 		return postagemRepository.findById(id)
