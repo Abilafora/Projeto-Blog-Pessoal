@@ -91,10 +91,10 @@ public class UsuarioControllerTest {
 	@DisplayName("Listar todos os Usuários")
 	public void deveMostrarTodosUsuarios() {
 
-		usuarioService.cadastrarUsuario(new Usuario(0L, 
+		usuarioService.cadastrarUsuario(new Usuario(null, 
 			"Sabrina Sanches", "sabrina_sanches@email.com.br", "sabrina123"));
 		
-		usuarioService.cadastrarUsuario(new Usuario(0L, 
+		usuarioService.cadastrarUsuario(new Usuario(null, 
 			"Ricardo Marques", "ricardo_marques@email.com.br", "ricardo123"	));
 
 		ResponseEntity<String> resposta = testRestTemplate
