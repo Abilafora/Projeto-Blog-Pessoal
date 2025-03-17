@@ -46,6 +46,22 @@ public class Usuario {
 	// esse jason é para nao dar loop infinito
 	@JsonIgnoreProperties("usuario")
 	private List<Postagem>postagem;
+	
+	
+	
+
+	public Usuario(Long id, String senha, String usuario,String foto) {
+		this.id = id;
+		this.nome = nome;
+		this.senha = senha;
+		this.usuario = usuario;
+		this.foto = foto;
+	}
+	
+	public Usuario() {
+	}
+
+
 
 	public Long getId() {
 		return id;
