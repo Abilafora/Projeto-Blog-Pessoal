@@ -28,7 +28,6 @@ public class Usuario {
 	private Long id;
 	
 	@NotNull(message =" O atributo nome é obrigatorio")
-	@Size(min = 5, max = 100, message = "O titurlo tem limite tem que ser maior que 5 e menos que 100 palavras")
 	private String nome;
 	
 	@NotBlank(message =" O atributo senha é obrigatorio")
@@ -50,12 +49,13 @@ public class Usuario {
 	
 	
 
-	public Usuario(Long id, String senha, String usuario,String foto) {
-		this.id = id;
-		this.nome = nome;
-		this.senha = senha;
-		this.usuario = usuario;
-		this.foto = foto;
+	public Usuario(Long id, String nome, String usuario,String senha, String foto) {
+        this.id = id;
+        this.nome = nome;
+        this.usuario = usuario;
+        this.senha = senha;
+        this.foto = foto;
+    
 	}
 	
 	public Usuario() {
